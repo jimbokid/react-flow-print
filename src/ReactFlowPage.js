@@ -95,6 +95,7 @@ const ReactFlowPageInner = props => {
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
         //Prevent Zoom and drag when print preview mode
+
         zoomOnScroll={!isPrintPreview}
         zoomOnPinch={!isPrintPreview}
         panOnDrag={!isPrintPreview}
@@ -113,7 +114,6 @@ const ReactFlowPageInner = props => {
             <MiniMap/>
           </>
         )}
-
 
         <Background variant="dots" gap={12} size={1}/>
       </ReactFlow>
